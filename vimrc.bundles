@@ -16,5 +16,6 @@ call plug#begin('~/.vim/bundle')
 Plug 'scrooloose/nerdtree'
 Plug 'leafgarland/typescript-vim'
 Plug 'akz92/vim-ionic2'
+Plug 'Quramy/tsuquyomi'
 
 call plug#end()

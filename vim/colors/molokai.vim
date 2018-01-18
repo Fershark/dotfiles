@@ -101,8 +101,8 @@ hi Type            guifg=#66D9EF               gui=none
 hi Underlined      guifg=#808080               gui=underline
 
 hi VertSplit       guifg=#808080 guibg=#080808 gui=bold
-hi VisualNOS                     guibg=#403D3D
-hi Visual                        guibg=#403D3D
+hi VisualNOS                     guibg=#999999
+hi Visual                        guibg=#999999
 hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
 hi WildMenu        guifg=#66D9EF guibg=#000000
 

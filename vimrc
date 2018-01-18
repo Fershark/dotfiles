@@ -15,6 +15,10 @@ let g:rehash256 = 1
 set tabstop=2
 set shiftwidth=2
 
+" Search down into subfolders
+" Provides tab-completion for all file-related tasks
+set path+=**
+
 " Use one space, not two, after punctuation.
 set nojoinspaces
 
