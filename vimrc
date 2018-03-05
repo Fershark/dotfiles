@@ -45,11 +45,11 @@ inoremap <S-Tab> <C-n>
 set splitbelow
 set splitright
 
-" Quicker window movement
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
+" Quicker window movement replaced with plugin vim-tmux-navigator
+" nnoremap <C-j> <C-w>j
+" nnoremap <C-k> <C-w>k
+" nnoremap <C-h> <C-w>h
+" nnoremap <C-l> <C-w>l
 
 " Ignored files/directories from autocomplete (and CtrlP)
 set wildignore+=*/tmp/*

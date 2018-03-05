@@ -28,4 +28,5 @@ From time to time you should pull down any updates to these dotfiles, and run
 ```
 rcup
 :PlugInstall 
+tmux source ~/.tmux.conf
 ```
