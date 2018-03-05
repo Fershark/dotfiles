@@ -18,6 +18,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'leafgarland/typescript-vim'
 Plug 'akz92/vim-ionic2'
 Plug 'Quramy/tsuquyomi'
+Plug 'brooth/far.vim'
 Plug 'vim-scripts/groovyindent-unix'
 
 call plug#end()

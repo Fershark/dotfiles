@@ -3,9 +3,13 @@ syntax enable
 set number 				" Enable line numbers
 set showcmd       " display incomplete commands
 set ruler         " show the cursor position all the time
+set laststatus=2  " show file name always on bottom
 set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
 set autowrite     " Automatically :write before running commands
+set clipboard=unnamed " Sahre clipboard with the OS
+set hidden        " Change buffer without saving it
+set history=1000  " Lines remembered in a history table
 
 " Color theme
 colorscheme molokai
@@ -45,11 +49,18 @@ inoremap <S-Tab> <C-n>
 set splitbelow
 set splitright
 
+" Windows
 " Quicker window movement replaced with plugin vim-tmux-navigator
 " nnoremap <C-j> <C-w>j
 " nnoremap <C-k> <C-w>k
 " nnoremap <C-h> <C-w>h
 " nnoremap <C-l> <C-w>l
+" Quicker windows resize
+nnoremap <C-n> <C-w><
+nnoremap <C-m>  <C-w>>
+nnoremap + <C-w>+
+nnoremap - <C-w>-
+
 
 " Ignored files/directories from autocomplete (and CtrlP)
 set wildignore+=*/tmp/*
