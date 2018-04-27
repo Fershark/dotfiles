@@ -10,6 +10,9 @@ set autowrite     " Automatically :write before running commands
 set clipboard=unnamed " Sahre clipboard with the OS
 set hidden        " Change buffer without saving it
 set history=1000  " Lines remembered in a history table
+set autoread 			" When a file has been detected to have been changed outside of Vim and it has not been changed inside of Vim, automatically read it again.
+set foldmethod=syntax
+set nofoldenable  " open files non folded
 
 " Color theme
 colorscheme molokai

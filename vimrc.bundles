@@ -20,5 +20,6 @@ Plug 'akz92/vim-ionic2'
 Plug 'Quramy/tsuquyomi'
 Plug 'brooth/far.vim'
 Plug 'vim-scripts/groovyindent-unix'
+Plug 'posva/vim-vue'
 
 call plug#end()
