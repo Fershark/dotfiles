@@ -1,0 +1,26 @@
+" General settings
+set number 				" Enable line numbers
+set relativenumber " Show line relative from cursor
+set clipboard=unnamed " Share clipboard with the OS
+set history=1000  " Lines remembered in a history table
+
+" search 
+set incsearch                           " Enable incremental search
+set hlsearch                            " Highlight results of a search
+set smartcase                           " Ignore case only if seach string is all lowercase
+set ic                                  " Search ignore case
+
+" Different
+set surround 
+set multiple-cursors
+
+" Shortcuts 
+map <C-n> <A-n>
+map <C-x> <A-x>
+map <C-p> <A-p>
+
+" Navigation Between windows
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-h> <C-w>h
+map <C-l> <C-w>l
