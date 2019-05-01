@@ -12,6 +12,13 @@ set hidden        " Change buffer without saving it
 set history=1000  " Lines remembered in a history table
 set autoread 			" When a file has been detected to have been changed outside of Vim and it has not been changed inside of Vim, automatically read it again.
 set foldmethod=syntax
+
+" plugins
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
+
+
 set nofoldenable  " open files non folded
 
 " Color theme
