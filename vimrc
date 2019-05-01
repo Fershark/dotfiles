@@ -5,7 +5,6 @@ set relativenumber " Show line relative from cursor
 set showcmd       " display incomplete commands
 set ruler         " show the cursor position all the time
 set laststatus=2  " show file name always on bottom
-set showcmd       " display incomplete commands
 set autowrite     " Automatically :write before running commands
 set clipboard=unnamed " Share clipboard with the OS
 set hidden        " Change buffer without saving it
