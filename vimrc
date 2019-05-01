@@ -1,6 +1,7 @@
 " General settings
 syntax enable
 set number 				" Enable line numbers
+set relativenumber " Show line relative from cursor
 set showcmd       " display incomplete commands
 set ruler         " show the cursor position all the time
 set laststatus=2  " show file name always on bottom
