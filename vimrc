@@ -24,8 +24,8 @@ set smartcase                           " Ignore case only if seach string is al
 nnoremap <silent> <Esc> :let @/=""<CR>
 
 " plugins
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
+if filereadable(expand("~/.vim/plugins.vim"))
+  source ~/.vim/plugins.vim
 endif
 
 
