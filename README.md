@@ -22,6 +22,12 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 Reload .vimrc and <b>:PlugInstall</b> to install plugins.
 
+```
+mkdir ~/tmp/
+```
+
+Create the tmp folder for storing the swp file and as a backup directory.
+
 ## Update
 
 From time to time you should pull down any updates to these dotfiles, and run
