@@ -14,6 +14,9 @@ set autoread 			" When a file has been detected to have been changed outside of 
 set foldmethod=syntax
 set backupdir-=. " Remove the file location for the backup directory configuration
 set directory-=. " Remove the file location for the directory configuration
+if !isdirectory($HOME . "/tmp") " Create the tmp folder in home if it doesn't exist for directory and backup
+  call mkdir($HOME . "/tmp", "")
+endif
 
 
 " search 
