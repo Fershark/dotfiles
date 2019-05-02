@@ -6,6 +6,7 @@ set showcmd       " display incomplete commands
 set ruler         " show the cursor position all the time
 set laststatus=2  " show file name always on bottom
 set autowrite     " Automatically :write before running commands
+set autoindent    " Copy indent from the current line when starting a new line
 set clipboard=unnamed " Share clipboard with the OS
 set hidden        " Change buffer without saving it
 set history=1000  " Lines remembered in a history table
