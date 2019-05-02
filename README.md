@@ -13,14 +13,9 @@ Install the dotfiles:
 env RCRC=$HOME/dotfiles/rcrc rcup
 ```
 
-### Install vim-plug
+### Install plugins
 
-```
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-Reload .vimrc and <b>:PlugInstall</b> to install plugins.
+Run <b>:PlugInstall</b> to install plugins inside vim command line.
 
 ## Update
 

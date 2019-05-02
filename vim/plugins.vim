@@ -1,17 +1,9 @@
-  if &compatible
-    set nocompatible
-  end
+" Load vim-plug
+if empty(glob("~/.vim/autoload/plug.vim"))
+  execute '!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+endif
 
-  " Remove declared plugins
-  function! s:UnPlug(plug_name)
-    if has_key(g:plugs, a:plug_name)
-      call remove(g:plugs, a:plug_name)
-    endif
-  endfunction
-  command!  -nargs=1 UnPlug call s:UnPlug(<args>)
-
-
-  call plug#begin('~/.vim/bundle')
+call plug#begin('~/.vim/bundle')
 
   Plug 'rakr/vim-one'
   Plug 'vim-airline/vim-airline'
