@@ -96,7 +96,3 @@ set wildignore+=*.so
 set wildignore+=*.zip
 set wildignore+=*/vendor/*
 set wildignore+=*/node_modules/
-
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
-endif
