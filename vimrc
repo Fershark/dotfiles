@@ -30,6 +30,7 @@ set autoindent      " Copy indent from the current line when starting a new line
 " search 
 set incsearch                           " Enable incremental search
 set hlsearch                            " Highlight results of a search
+set ignorecase
 set smartcase                           " Ignore case only if seach string is all lowercase
 " clear search pattern
 nnoremap <silent> <Esc> :let @/=""<CR>
