@@ -6,7 +6,6 @@ set showcmd       " display incomplete commands
 set ruler         " show the cursor position all the time
 set laststatus=2  " show file name always on bottom
 set autowrite     " Automatically :write before running commands
-set autoindent    " Copy indent from the current line when starting a new line
 set clipboard=unnamed " Share clipboard with the OS
 set hidden        " Change buffer without saving it
 set history=1000  " Lines remembered in a history table
@@ -18,6 +17,14 @@ set directory-=. " Remove the file location for the directory configuration
 if !isdirectory($HOME . "/tmp") " Create the tmp folder in home if it doesn't exist for directory and backup
   call mkdir($HOME . "/tmp", "")
 endif
+
+
+" Identation and tabs(spaces)
+set tabstop=2       " The width of a hard tabstop measured in spaces -- effectively the (maximum) width of an actual tab characteFr.
+set shiftwidth=2    " Number of spaces to use for each step of (auto)indent
+set expandtab       " Enabling this will make the tab key (in insert mode) insert spaces instead of tab characters.
+set smarttab        " insert spaces or tabs to go to the next indent of the next tabstop when the cursor is at the beginning of a line
+set autoindent      " Copy indent from the current line when starting a new line
 
 
 " search 
@@ -39,9 +46,6 @@ set nofoldenable  " open files non folded
 colorscheme molokai
 let g:rehash256 = 1
 
-" Identation and tabs
-set tabstop=2
-set shiftwidth=2
 
 " Search down into subfolders
 " Provides tab-completion for all file-related tasks
