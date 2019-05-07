@@ -16,8 +16,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'mhinz/vim-startify'
   Plug 'tpope/vim-repeat'
   Plug 'tpope/vim-surround'
-  Plug 'vim-scripts/AutoComplPop'
-  Plug 'ervandew/supertab'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
   Plug 'junegunn/fzf.vim'
   Plug 'terryma/vim-multiple-cursors'
