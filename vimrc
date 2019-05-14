@@ -12,6 +12,7 @@ set history=1000  " Lines remembered in a history table
 set autoread 			" When a file has been detected to have been changed outside of Vim and it has not been changed inside of Vim, automatically read it again.
 set foldmethod=syntax
 set wildmenu     " Command-line completion
+set nojoinspaces " Insert one space after a '.', '?' and '!' with a join command.
 set backupdir-=. " Remove the file location for the backup directory configuration
 set directory-=. " Remove the file location for the directory configuration
 if !isdirectory($HOME . "/tmp") " Create the tmp folder in home if it doesn't exist for directory and backup
@@ -60,8 +61,6 @@ let g:rehash256 = 1
 " Provides tab-completion for all file-related tasks
 set path+=**
 
-" Use one space, not two, after punctuation.
-set nojoinspaces
 
 let mapleader = " "
 " Switch between the last two files
