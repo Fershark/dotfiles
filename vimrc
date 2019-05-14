@@ -18,6 +18,9 @@ set directory-=. " Remove the file location for the directory configuration
 if !isdirectory($HOME . "/tmp") " Create the tmp folder in home if it doesn't exist for directory and backup
   call mkdir($HOME . "/tmp", "")
 endif
+let mapleader = " " " Map leader to space
+set splitbelow " Split to the bottom
+set splitright " Split to the right
 
 
 " Identation and tabs(spaces)
@@ -28,13 +31,13 @@ set smarttab        " insert spaces or tabs to go to the next indent of the next
 set autoindent      " Copy indent from the current line when starting a new line
 
 
-" search 
-set incsearch                           " Enable incremental search
-set hlsearch                            " Highlight results of a search
+" Search 
 set ignorecase
 set smartcase                           " Ignore case only if seach string is all lowercase
-" clear search pattern
-nnoremap <silent> <Esc> :let @/=""<CR>
+set hlsearch                            " Highlight results of a search
+set incsearch                           " Display the match for the string while typing a search
+nnoremap <silent> <Esc> :let @/=""<CR>|" Clear search pattern
+
 
 " plugins
 if filereadable(expand("~/.vim/plugins.vim"))
@@ -62,15 +65,6 @@ let g:rehash256 = 1
 set path+=**
 
 
-let mapleader = " "
-" Switch between the last two files
-nnoremap <Leader><Leader> <C-^>
-
-
-" Open new split panes to right and bottom, which feels more natural
-set splitbelow
-set splitright
-
 " Windows
 " Quicker window movement replaced with plugin vim-tmux-navigator
 " nnoremap <C-j> <C-w>j
@@ -80,6 +74,7 @@ set splitright
 
 
 " shorcuts
+nnoremap <Leader><Leader> <C-^>|" Switch between the last two files
 inoremap <C-Space> <C-x><C-o>|" Mapping for omnicompletion
 " Quicker windows resize
 nnoremap <C-n> <C-w><
