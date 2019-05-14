@@ -3,7 +3,7 @@
 " Java
 function JavaSettings() 
   setlocal shiftwidth=4 tabstop=4
-  let java_highlight_functions="indent"
+  let g:java_highlight_functions="indent"
 endfunction
 autocmd FileType java call JavaSettings()
 
