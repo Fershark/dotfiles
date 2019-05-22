@@ -59,9 +59,11 @@ autocmd BufWinEnter * normal zR
 set foldclose=all " Make folds close automatically when you move out of it
 
 
-" Color theme
-colorscheme molokai
-let g:rehash256 = 1
+" Appearance
+set termguicolors " Enable the 24-bit colors in vim
+colorscheme one   " Set the theme to one, which is in plugins
+set background=dark|" Set the dark theme
+let g:one_allow_italics=1|" Enable the italics
 
 
 " Search down into subfolders
