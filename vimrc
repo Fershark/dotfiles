@@ -38,7 +38,7 @@ set incsearch                           " Display the match for the string while
 nnoremap <silent> <Esc> :let @/=""<CR>|" Clear search pattern
 
 
-" plugins
+" Plugins
 if filereadable(expand("~/.vim/plugins.vim"))
   source ~/.vim/plugins.vim
 endif
@@ -77,7 +77,7 @@ set path+=**
 " nnoremap <C-l> <C-w>l
 
 
-" shorcuts
+" Shortcuts
 nnoremap <Leader><Leader> <C-^>|" Switch between the last two files
 inoremap <C-Space> <C-x><C-o>|" Mapping for omnicompletion
 " Quicker windows resize
