@@ -20,6 +20,7 @@ endif
 let mapleader = " " " Map leader to space
 set splitbelow     " Split to the bottom
 set splitright     " Split to the right
+set termguicolors  " Enable the 24-bit colors in vim
 
 
 " Identation and tabs(spaces)
@@ -59,15 +60,29 @@ if filereadable(expand("~/.vim/filetypes.vim"))
 endif
 
 
+" ryanoasis/vim-devicons
+set encoding=UTF-8
+set guifont=Hack\ Nerd\ Font:h12
+let g:airline_powerline_fonts=1|" Setting for the plugin to work with airline
 
-" Appearance
-set termguicolors " Enable the 24-bit colors in vim
+" rakr/vim-one 
 colorscheme one   " Set the theme to one, which is in plugins
 set background=dark|" Set the dark theme
 let g:one_allow_italics=1|" Enable the italics
 
+" vim-airline/vim-airline
+let g:airline_theme='deus'
+let g:airline#extensions#tabline#enabled=1|" Display the buffers on the top if there is only one tab
+let g:airline#extensions#tabline#left_sep=' '|" Change the default separator for the tabline
+let g:airline#extensions#tabline#left_alt_sep='|'|" Change the default separator for the tabs
 
+" nathanaelkane/vim-indent-guides
+let g:indent_guides_enable_on_vim_startup=1
 
+" mhinz/vim-startify
+let g:startify_session_autoload=1|" Open sessions when a session file is opened in vim
+let g:startify_session_persistence=1|" Automatically update sessions before leaving vim or loading a new session
+autocmd User Startified normal zR
 
 
 " Shortcuts
