@@ -21,8 +21,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'junegunn/fzf.vim'
   Plug 'terryma/vim-multiple-cursors'
 
-  Plug 'akz92/vim-ionic2'
-  Plug 'vim-scripts/groovyindent-unix'
   Plug 'shawncplus/phpcomplete.vim', { 'for': ['php'] }
   Plug 'sheerun/vim-polyglot'
   Plug 'Valloric/YouCompleteMe'
