@@ -12,6 +12,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'ryanoasis/vim-devicons'
 
   Plug 'scrooloose/nerdtree'
+  Plug 'scrooloose/nerdcommenter'
   Plug 'brooth/far.vim'
   Plug 'mhinz/vim-startify'
   Plug 'tpope/vim-repeat'
@@ -19,7 +20,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
   Plug 'junegunn/fzf.vim'
   Plug 'terryma/vim-multiple-cursors'
-  Plug 'scrooloose/nerdcommenter'
 
   Plug 'akz92/vim-ionic2'
   Plug 'vim-scripts/groovyindent-unix'

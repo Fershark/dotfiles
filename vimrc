@@ -1,25 +1,25 @@
 " General settings
 syntax enable
-set number 				" Enable line numbers
+set number 			 	 " Enable line numbers
 set relativenumber " Show line relative from cursor
-set showcmd       " display incomplete commands
-set ruler         " show the cursor position all the time
-set laststatus=2  " show file name always on bottom
-set autowrite     " Automatically :write before running commands
+set showcmd        " display incomplete commands
+set ruler          " show the cursor position all the time
+set laststatus=2   " show file name always on bottom
+set autowrite      " Automatically :write before running commands
 set clipboard=unnamed " Share clipboard with the OS
-set hidden        " Change buffer without saving it
-set history=1000  " Lines remembered in a history table
-set autoread 			" When a file has been detected to have been changed outside of Vim and it has not been changed inside of Vim, automatically read it again.
-set wildmenu     " Command-line completion
-set nojoinspaces " Insert one space after a '.', '?' and '!' with a join command.
-set backupdir-=. " Remove the file location for the backup directory configuration
-set directory-=. " Remove the file location for the directory configuration
+set hidden         " Change buffer without saving it
+set history=1000   " Lines remembered in a history table
+set autoread 			 " When a file has been detected to have been changed outside of Vim and it has not been changed inside of Vim, automatically read it again.
+set wildmenu       " Command-line completion
+set nojoinspaces   " Insert one space after a '.', '?' and '!' with a join command.
+set backupdir-=.   " Remove the file location for the backup directory configuration
+set directory-=.   " Remove the file location for the directory configuration
 if !isdirectory($HOME . "/tmp") " Create the tmp folder in home if it doesn't exist for directory and backup
   call mkdir($HOME . "/tmp", "")
 endif
 let mapleader = " " " Map leader to space
-set splitbelow " Split to the bottom
-set splitright " Split to the right
+set splitbelow     " Split to the bottom
+set splitright     " Split to the right
 
 
 " Identation and tabs(spaces)
@@ -38,6 +38,13 @@ set incsearch                           " Display the match for the string while
 nnoremap <silent> <Esc> :let @/=""<CR>|" Clear search pattern
 
 
+" Folding
+set foldmethod=indent
+" Open buffers with their local max foldlevel
+autocmd BufWinEnter * normal zR
+set foldclose=all " Make folds close automatically when you move out of it
+
+
 " Plugins
 if filereadable(expand("~/.vim/plugins.vim"))
   source ~/.vim/plugins.vim
@@ -52,12 +59,6 @@ if filereadable(expand("~/.vim/filetypes.vim"))
 endif
 
 
-" Folding
-set foldmethod=indent
-" Open buffers with their local max foldlevel
-autocmd BufWinEnter * normal zR
-set foldclose=all " Make folds close automatically when you move out of it
-
 
 " Appearance
 set termguicolors " Enable the 24-bit colors in vim
@@ -66,28 +67,27 @@ set background=dark|" Set the dark theme
 let g:one_allow_italics=1|" Enable the italics
 
 
-" Search down into subfolders
-" Provides tab-completion for all file-related tasks
-set path+=**
 
-
-" Windows
-" Quicker window movement replaced with plugin vim-tmux-navigator
-" nnoremap <C-j> <C-w>j
-" nnoremap <C-k> <C-w>k
-" nnoremap <C-h> <C-w>h
-" nnoremap <C-l> <C-w>l
 
 
 " Shortcuts
 nnoremap <Leader><Leader> <C-^>|" Switch between the last two files
 inoremap <C-Space> <C-x><C-o>|" Mapping for omnicompletion
+" Navigation Between windows
+" Quicker window movement replaced with plugin vim-tmux-navigator
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 " Quicker windows resize
 nnoremap <C-n> <C-w><
 nnoremap <C-m>  <C-w>>
 nnoremap + <C-w>+
 nnoremap - <C-w>-
 
+" Search down into subfolders
+" Provides tab-completion for all file-related tasks
+set path+=**
 
 " Ignored files/directories from autocomplete (and CtrlP)
 set wildignore+=*/tmp/*
