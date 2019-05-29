@@ -84,6 +84,11 @@ let g:indent_guides_enable_on_vim_startup=1
 let g:startify_session_autoload=1|" Open sessions when a session file is opened in vim
 let g:startify_session_persistence=1|" Automatically update sessions before leaving vim or loading a new session
 autocmd User Startified normal zR
+ 
+" xuhdev/vim-latex-live-preview
+let g:livepreview_previewer='open -a Preview'
+let g:livepreview_engine='xelatex'
+let g:livepreview_cursorhold_recompile=0
 
 
 " Shortcuts
