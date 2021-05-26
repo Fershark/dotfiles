@@ -30,7 +30,7 @@ POWERLEVEL9K_DIR_ETC_BACKGROUND="white"
 # vi mode
 POWERLEVEL9K_VI_MODE_NORMAL_FOREGROUND="magenta"
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
