@@ -7,6 +7,12 @@ function JavaSettings()
 endfunction
 autocmd FileType java call JavaSettings()
 
+" Groovy
+function GroovySettings()
+  setlocal shiftwidth=4 tabstop=4
+endfunction
+autocmd FileType groovy call GroovySettings()
+
 " TEX
 function TexSettings() 
   LLPStartPreview
@@ -15,7 +21,7 @@ autocmd FileType tex call TexSettings()
 
 " Blade
 function BladeSettings() 
-  setlocal shiftwidth=2 tabstop=2
+  setlocal shiftwidth=4 tabstop=4
 endfunction
 autocmd FileType blade call BladeSettings()
 

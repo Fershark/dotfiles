@@ -20,10 +20,14 @@ call plug#begin('~/.vim/bundle')
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
   Plug 'junegunn/fzf.vim'
   Plug 'terryma/vim-multiple-cursors'
+  Plug 'christoomey/vim-tmux-navigator'
+  Plug 'junegunn/vim-easy-align'
+  Plug 'prettier/vim-prettier', { 'do': 'npm install && npm install --save-dev prettier @prettier/plugin-php' }
 
-  Plug 'shawncplus/phpcomplete.vim', { 'for': ['php'] }
-  Plug 'sheerun/vim-polyglot'
   Plug 'Valloric/YouCompleteMe'
+  "Plug 'shawncplus/phpcomplete.vim', { 'for': ['php'] }
+  Plug 'sheerun/vim-polyglot'
   Plug 'xuhdev/vim-latex-live-preview'
+  Plug 'mattn/emmet-vim'
 
 call plug#end()
