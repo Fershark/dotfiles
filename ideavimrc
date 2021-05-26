@@ -13,14 +13,20 @@ set ic                                  " Search ignore case
 " Different
 set surround 
 set multiple-cursors
+set ideajoin
+set commentary
+set showmode
 
 " Shortcuts 
+let mapleader=" "
+map <Leader>c :nohls<cr>
+" map <C-p> <M-p>
+map <Leader><Leader> <C-^>
 map <C-n> <A-n>
-map <C-x> <A-x>
-map <C-p> <A-p>
 
 " Navigation Between windows
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-h> <C-w>h
 map <C-l> <C-w>l
+
